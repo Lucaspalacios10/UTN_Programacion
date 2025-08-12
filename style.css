@@ -1,0 +1,584 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css");
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import "bootstrap-icons/font/bootstrap-icons";
+
+
+* {
+    font-family: "DM Sans", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    width: 100vw;
+}
+
+.header__container__left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    padding: 20px 40px;
+    width: 100%;
+}
+
+.hostinger_header__container__right {
+    display: flex;
+    gap: 32px;
+}
+
+.hostinger_header__button
+{
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+    font-weight: 700;
+    background-color: white;
+    border: none;
+}
+
+.Hostinger_header__myacount
+{
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: black;
+    text-decoration: none;
+    border-color: black;
+}
+
+.hostinger_header__links {
+    display: flex;
+    gap: 32px;
+    font-size: 16px;
+    line-height: 24px;
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.hostinger_main__class {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 36px 80px 96px 80px;
+    width: 100vw;
+    height: 100%;
+}
+
+.hostinger_left__container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+
+.hostinger_header__title {
+    font-size: 36px;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+.hostinger_header__paragraph {
+    font-size: 20px;
+    margin: 8px 0 0;
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
+    font-weight: 700;
+    line-height: 32px;
+}
+
+.hostinger_unordered__list {
+    vertical-align: baseline;
+    font-size: 16px;
+    gap: 10px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.hostinger_price {
+    font-size: 20px;
+    height: 24px;
+    width: 42px;
+}
+
+.hostinger_price__number {
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+}
+
+.hostinger_months__free {
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: 700;
+}
+
+
+.hostinger_button1__start {
+    background-color: #673de6;
+    color: white;
+    font-size: 16px;
+    height: 48px;
+    width: 190px;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+.hostinger_button__time {
+    background-color: #e2dbfc;
+    width: 190px;
+    height: 48px;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 24px;
+    border-radius: 6px;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hostinger_button__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+
+.hostinger_image {
+    width: 100%;
+    height: 100%;
+    border-radius: 6px;
+    padding: 0;
+}
+
+
+@media screen and (max-width: 964px) {
+
+    .hostinger_main__class,
+    .hostinger_image,
+    .hostinger_left__container {
+        width: 100vw;
+        max-width: 100%;
+    }
+
+    .hostinger_main__class {
+        flex-direction: column;
+        align-items: start;
+        justify-content: left;
+        padding: 0 24px;
+    }
+
+    .hostinger_image {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        justify-content: left;
+    }
+}
+
+@media screen and (min-width: 2001px) {
+    .hostinger_left__container {
+        width: 100%;
+        height: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hostinger_header__container__right,
+    .header__container__left,
+    header {
+        width: 100%;
+        max-width: 100vw;
+        height: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .hostinger_main__class {
+        width: 100%;
+        height: 100%;
+        max-width: 2000px;
+        max-height: 2000px;
+        display: flex;
+    }
+
+
+}
+
+@media screen and (max-width: 2000px) {
+    .hostinger_icon {
+        visibility: hidden;
+        display: none;
+        transform: none;
+        filter: none;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+
+    .hostinger_header__links,
+    .hostinger_header__container__right {
+        visibility: hidden;
+    }
+
+    .hostinger_icon {
+        visibility: visible;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 100%;
+        font-size: 24px;
+    }
+
+    .header__container__left {
+        max-width: 100vw;
+        flex-direction: row;
+        padding: none;
+    }
+
+    .section_right {
+        display: none;
+    }
+
+    .hostinger_footer {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+}
+
+
+.hostinger_boxes__title {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    justify-content: center;
+    margin: 0 auto;
+    color: white;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+    width: 100%;
+}
+
+.hostinger_section__container {
+    width: 1128px;
+    max-width: 1128px;
+}
+
+.hostinger_boxes__paragraph {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.hostinger_main__boxes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 24px;
+}
+
+.hostinger_main__box {
+    background-color: #2f1a6b;
+    padding: 32px;
+    border-radius: 16px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    width: 100vw;
+}
+
+.hostinger_title__paragraph {
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 48px;
+}
+
+.hostinger_section {
+    padding-bottom: 80px;
+    padding-top: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #1f1346;
+    width: 100vw;
+}
+
+.hostinger_box_title,
+.hostinger_box__paragraph {
+
+    gap: 16px;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.hostinger_box__paragraph {
+    font-size: 16px;
+}
+
+.hostinger_box__icons {
+    background-color: #5e3ac2;
+    height: 40px;
+    width: 40px;
+    border-radius: 6px;
+}
+
+.hostinger_button__start {
+    height: 48px;
+    width: 136px;
+    padding: 12px 48px;
+    margin-top: 50px;
+    border-radius: 8px;
+    font-weight: 700;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    background-color: #673de6;
+    border-color: #673de6;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.body {
+    min-height: 100vh;
+}
+
+.hostinger_footer {
+    background-color: rgb(247, 244, 244);
+    width: 100vw;
+}
+
+.hostinger_footer2 {
+    width: 100%;
+    max-width: 1208px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.hostinger_footer__title__links {
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.hostinger_footer__links {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    gap: 18px;
+    font-size: 16px;
+}
+
+.icon_redes {
+    font-size: 18px;
+    color: black;
+    margin-bottom: 16px;
+}
+
+.icon_redes img {
+    height: 24px;
+    margin-right: 8px;
+}
+
+.hostinger_images__payment {
+    height: 40px;
+    width: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.hostinger_images__payment img {
+    height: 40px;
+    width: auto;
+    max-width: 80px;
+    object-fit: contain;
+    display: block;
+}
+
+.hostinger_politics {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+    line-height: 24px;
+    cursor: pointer;
+    font-weight: 400;
+    color: #1d1e20;
+    text-decoration: none;
+}
+
+.hostinger_politics__payment {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 24px;
+    max-width: 100%;
+    padding: 8px;
+}
+
+.hostinger_footer__paragraph {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+}
+
+@media screen and (max-width: 768px) {
+    .hostinger_footer__title__links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .hostinger_footer__links {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        order: -1;
+        gap: 50px;
+    }
+
+    .hostinger_politics__payment {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hostinger_images__payment {
+        justify-content: center;
+        width: 100%;
+        flex-wrap: wrap;
+        display: flex;
+        margin-bottom: 20px;
+    }
+
+    .hostinger_footer__paragraph {
+        flex-direction: column;
+        gap: 12px;
+    }
+
+    .icon_redes {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 16px;
+    }
+
+    .hostinger_politics {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+    }
+}
+
+@media screen and (max-width: 964px) {
+    .hostinger_main__boxes {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .hostinger_header__paragraph,
+    .hostinger_header__title {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+    }
+
+    .hostinger_section__container {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 16px;
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .hostinger_main__box {
+        flex-direction: column;
+        background-color: #2f1a6b;
+    }
+
+    .hostinger_main__boxes {
+        gap: 40px;
+    }
+
+    .hostinger_header__paragraph {
+        max-width: 1700px;
+        height: 100%;
+        flex-direction: column;
+        font-size: 20px;
+    }
+
+    .hostinger_header__title {
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        font-size: 40px;
+    }
+}
+
+
+@media screen and (max-width:650px) {
+    header {
+        max-width: 650px;
+    }
+
+    .hostinger_main__class {
+        max-width: 650px;
+    }
+
+    .hostinger_section {
+        max-width: 650px;
+    }
+
+    .hostinger_footer {
+        max-width: 650px;
+    }
+}
